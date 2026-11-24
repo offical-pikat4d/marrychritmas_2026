@@ -14,7 +14,7 @@
    * 1) KONFIGURASI  (edit di sini, atau override lewat URL: ?name=@kamu&theme=neon)
    * ===================================================================== */
   const CONFIG = {
-    handle: '@namakamu',            // tampil di pojok kiri atas
+    handle: 'Emelia Simamora',            // tampil di pojok kiri atas
     banner: 'MERRY CHRISTMAS 2026', // teks di bawah pohon
     theme: 'classic',               // classic | ice | neon
     fps: 30,                        // batas frame per detik
