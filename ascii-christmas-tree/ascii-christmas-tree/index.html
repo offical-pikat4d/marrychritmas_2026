@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>ASCII Christmas Tree 2026</title>
+  <meta name="description" content="Pohon Natal 3D berputar yang digambar hanya dengan karakter ASCII. JavaScript murni, tanpa dependensi.">
+  <meta name="theme-color" content="#05060d">
+  <meta property="og:title" content="ASCII Christmas Tree 2026">
+  <meta property="og:description" content="Pohon Natal 3D berputar yang digambar hanya dengan karakter ASCII.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎄</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="stage" id="stage">
+    <div class="view" id="view">
+      <canvas id="c" role="img" aria-label="Pohon Natal 3D berputar yang digambar dari karakter ASCII"></canvas>
+
+      <div class="hud tl">
+        <div class="handle" id="handle">@namakamu</div>
+        <div>rotation <b id="rot">0.00°</b></div>
+        <div>letters <b id="letters">0</b></div>
+      </div>
+      <div class="hud tr">t <b id="time">0.0s</b></div>
+
+      <div class="tools">
+        <button id="btnPause" type="button" aria-label="Jeda / putar (Spasi)" title="Jeda / putar (Spasi)">⏸</button>
+        <button id="btnTheme" type="button" aria-label="Ganti tema (T)" title="Ganti tema (T)">🎨</button>
+        <button id="btnSave" type="button" aria-label="Simpan PNG (S)" title="Simpan PNG (S)">📸</button>
+      </div>
+
+      <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    </div>
+
+    <section class="codebar" id="codebar" aria-hidden="true">
+      <header>
+        <span>christmas_tree.js</span>
+        <span class="run"><i></i>running · <b id="fps">30</b> fps</span>
+      </header>
+      <div class="code"><pre id="code"></pre></div>
+    </section>
+  </main>
+
+  <noscript><p style="color:#fff;text-align:center;padding:2rem">Aktifkan JavaScript untuk melihat pohon Natalnya 🎄</p></noscript>
+  <script src="main.js" defer></script>
+</body>
+</html>
